@@ -12,7 +12,7 @@
     var user = userCredential.user;
     // ...
   })
-  .then(()=>window.location.href ="/index.html")
+  .then(()=>window.location.href ="/home.html")
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
@@ -47,7 +47,7 @@ firebase.auth()
     // IdP data available in result.additionalUserInfo.profile.
       // ...
   })
-  .then(()=> window.location.href = "/index.html")
+  .then(()=> window.location.href = "/home.html")
 
   .catch((error) => {
     // Handle Errors here.

@@ -8,7 +8,7 @@ document.getElementById("login-btn").onclick = function (){
     var user = userCredential.user;
     // ...
   }).then(()=>{
-    window.location.href = "index.html";
+    window.location.href = "home.html";
   })
   .catch((error) => {
     var errorCode = error.code;
