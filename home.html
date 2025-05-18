@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main"> 
+<video id="video" width="100%" height="100%" autoplay loop muted>
+    <source src="/videos/7233540-uhd_2560_1080_25fps.mp4">
+</video><div class="container">
+    <h1><span style="color: white;">Socialize</span></h1>
+<button id="login" style="cursor: pointer;" onclick="gotologin()">Login</button>
+</div>
+<p><span style="color: white; line-height: 30px;">Are you lonely?&nbsp;&nbsp;&nbsp;&nbsp; Do you have a boring social life?
+     <br>Make friends with people who have mutual interest<br> with you,
+in your neighbourhood. </span></p>
+<button id="meet" style="cursor: pointer;" onclick="opensignup()"></span>Meet New People</button>
+
+<div class="overlay" id="overlay"style="display: none;" >
+      <label>First name</label>
+      <input type="text" id="name">
+      <label>Email</label>
+      <input type="email" id="email">
+      <label>Password</label>
+      <input type="password" id="password">
+      <button id="signup" style="cursor: pointer;">Make friends Now</button>
+      <p><span style="color: blue; font-size: 20px;" id="google" >Sign in with google</span></p>
+      <button id="close" onclick="closesignup()">close</button>
+</div><div class="low">
+    <div class="low-item">
+        <img src="/images/shape.png"><p>Make friends</p>
+    </div>
+    <div class="low-item">
+        <img src="/images/shape.png"><p>Laugh more</p>
+    </div>
+    <div class="low-item">
+        <img src="/images/shape.png"><p>Live happily</p>
+    </div>
+</div>
+</div>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <script src="/js/config.js"></script>
+<script src="/js/home.js"></script>
+</body>
+
+</html>
